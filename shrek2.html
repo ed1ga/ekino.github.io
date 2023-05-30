@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="main">
+		<div class="header">
+    		<div class="head">
+    			<img src="https://www.magnolia-cms.com/dam/jcr:7e5b3dba-5d7a-4e78-ad1f-604f9e027e51/logo-ekino-2017-12-08.png" class="logo">
+    		</div>
+    		<div class="menu_box">
+		   <ul class="menu">
+
+		     <li><a href="serialner.html" class="menu_link">Serialner</a></li>
+        <li><a href="filmer.html" class="menu_link">Filmer</a></li>
+        <li><a href="multfilmer.html" class="menu_link">Multfilmer</a></li>
+
+		    <li><button class="tablink" style="margin-left: 73px;">Sing Up</button></li>
+		    
+		   </ul>
+		    </div>
+
+    	</div>
+    	<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqKKF0qVJ4gcGFrjr5IyEFo6-Ft07rRd7hU9SS5CgwXul2PuAWD2YMEEKG0ppiOFmoAYU&usqp=CAU" style="width:100%;  box-shadow: 2px 2px 13px 0px gray;">
+  <div class="text"></div>
+</div>
+
+</div>
+<br>
+
+
+
+
+
+
+    	<div class="content">
+    		<div class="aj">
+    			
+          
+          <iframe src="https://armdb.org/player/12042" width="700" height="400" allowfullscreen="" style="width: 1000px; height: 566px; box-shadow: 2px 2px 13px 0px gray;"></iframe>
+    			<h1>Շռեկ 2 - մուլտֆիլմ(հայերեն)</h1>
+    			<a href="index.html" class="tablink" style="text-decoration: none; ">Hазат</a>
+    		</div>
+    		<br>
+    	</div>
+    	<br>
+    	<div class="header">
+    		<div class="head">
+    			@CREATED BY EDGAR MANUKYAN
+    		</div>
+    		
+
+    	</div>
+	</div>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000);
+}
+</script>
+</body>
+</html>

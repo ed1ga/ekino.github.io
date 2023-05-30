@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="main">
+    	<div class="header">
+    		<div class="head">
+    			<img src="https://www.magnolia-cms.com/dam/jcr:7e5b3dba-5d7a-4e78-ad1f-604f9e027e51/logo-ekino-2017-12-08.png" class="logo">
+    		</div>
+    		<div class="menu_box">
+		   <ul class="menu">
+
+		    <li><a href="index.html" class="menu_link">Home</a></li>
+		    <li><a href="filmer.html" class="menu_link">Filmer</a></li>
+		    <li><a href="multfilmer.html" class="menu_link">Multfilmer</a></li>
+
+		    <li><button class="tablink" style="margin-left: 73px;" ><a href="sign.html" style="color: white; text-decoration: none;">Sign Up</a></button></li>
+		   
+		   </ul>
+		    </div>
+
+    	</div>
+
+
+        <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="https://www.armkino.am/images/uploads/hars-chka-2-60491c89982fc.jpg" style="width:100%;  box-shadow: 2px 2px 13px 0px gray;">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="https://www.armkino.am/images/uploads/depi-chambar-to-the-camp-2-602d5a83c0348.jpg" style="width:100%;  box-shadow: 2px 2px 13px 0px gray;">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="https://www.armkino.am/images/uploads/fake-papa-60491c3a75651.jpg" style="width:100%;  box-shadow: 2px 2px 13px 0px gray;">
+  <div class="text"></div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div><br>
+<div><h2  class="cc">Սերիալներ</h2></div><br>
+ 
+
+		
+		<div class="content">
+			
+    <div class="product">
+				<a href="2050-1.html">
+    	<img class="product_image" src="https://img.youtube.com/vi/dHSwTFS5rqE/mqdefault.jpg">
+    	</a>
+    	<h5 class="product_tittle">Վարչապետ 2050 - սերիա 1</h5>
+    	
+    	
+    </div>
+    <div class="product">
+				<a href="2050-2.html">
+    	<img class="product_image" src="https://img.youtube.com/vi/8XgjEYUQC1U/mqdefault.jpg">
+    	</a>
+    	<h5 class="product_tittle">Վարչապետ 2050 - սերիա 2</h5>
+    	
+    	
+    </div>
+    <div class="product">
+				<a href="2050-3.html">
+    	<img class="product_image" src="https://img.youtube.com/vi/P-D2RfcMr-g/mqdefault.jpg">
+    	</a>
+    	<h5 class="product_tittle">Վարչապետ 2050 - սերիա 3</h5>
+    	
+    	
+    </div>
+
+		</div>	 
+		<div class="header">
+    		<div class="head">
+    			@CREATED BY EDGAR MANUKYAN
+    		</div>
+    		
+
+    	</div>
+		
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000);
+}
+</script>
+</html>
